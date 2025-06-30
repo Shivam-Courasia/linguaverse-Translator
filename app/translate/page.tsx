@@ -11,7 +11,7 @@ import { AuthGuard } from "@/components/auth-guard"
 import { useAuth } from "@/hooks/use-auth"
 import { LocalAuth } from "@/lib/local-auth"
 
-// Force dynamic rendering to prevent build errors - Vercel deployment fix
+// Force dynamic rendering for client component
 export const dynamic = 'force-dynamic'
 
 const languages = [
