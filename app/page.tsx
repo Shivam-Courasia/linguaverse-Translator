@@ -4,6 +4,9 @@ import { Globe, MessageSquare, FileText, Volume2, Users, Shield, Languages } fro
 import Link from "next/link"
 import { Header } from "@/components/header"
 
+// Force dynamic rendering to prevent build errors
+export const dynamic = 'force-dynamic'
+
 export default function LinguaVerseLanding() {
   return (
     <div className="min-h-screen bg-gray-900 text-white">

@@ -13,7 +13,6 @@ import { LocalAuth } from "@/lib/local-auth"
 
 // Force dynamic rendering to prevent build errors
 export const dynamic = 'force-dynamic'
-export const revalidate = 0
 
 const languages = [
   { code: "en", name: "English" },

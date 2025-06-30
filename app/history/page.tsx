@@ -9,6 +9,9 @@ import { AuthGuard } from "@/components/auth-guard"
 import { useAuth } from "@/hooks/use-auth"
 import { LocalAuth, type Translation } from "@/lib/local-auth"
 
+// Force dynamic rendering to prevent build errors
+export const dynamic = 'force-dynamic'
+
 const languageNames: { [key: string]: string } = {
   en: "English",
   es: "Spanish",

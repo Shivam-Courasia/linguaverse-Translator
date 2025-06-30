@@ -7,11 +7,14 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
-import { Eye, EyeOff, AlertCircle } from "lucide-react"
+import { Eye, EyeOff, AlertCircle, CheckCircle } from "lucide-react"
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { useAuth } from "@/hooks/use-auth"
 import { useRouter } from "next/navigation"
+
+// Force dynamic rendering to prevent build errors
+export const dynamic = 'force-dynamic'
 
 export default function LoginPage() {
   const [showPassword, setShowPassword] = useState(false)

@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -11,6 +11,9 @@ import { AuthGuard } from "@/components/auth-guard"
 import { useAuth } from "@/hooks/use-auth"
 import { LocalAuth } from "@/lib/local-auth"
 import { useRouter } from "next/navigation"
+
+// Force dynamic rendering to prevent build errors
+export const dynamic = 'force-dynamic'
 
 export default function ProfilePage() {
   const { user, signOut } = useAuth()

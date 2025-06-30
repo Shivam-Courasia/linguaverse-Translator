@@ -13,6 +13,9 @@ import { Header } from "@/components/header"
 import { useAuth } from "@/hooks/use-auth"
 import { useRouter } from "next/navigation"
 
+// Force dynamic rendering to prevent build errors
+export const dynamic = 'force-dynamic'
+
 export default function SignUpPage() {
   const [showPassword, setShowPassword] = useState(false)
   const [formData, setFormData] = useState({
